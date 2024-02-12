@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nandemonai</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="odin-image">
+        <div class="title">
+            <div class="logo">
+                <img src="./images/odin-lined.png" alt="odin logo">
+            </div>
+            <h2>
+                ODIN
+            </h2>
+        </div>
+        <div class="img-src" ></div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="welcome-text">
+            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+        </div>
+        <div class="welcome-text2">
+            You know 😉 you want to.
+        </div>
+        <form id="sign-up" action="#">
+            <h4>Let's do this!</h4>
+            <div class="container">
+                <fieldset>
+                    <label for="first_name">
+                        *FIRST NAME
+                        <input type="text" id="first_name" name="first_name" placeholder="cherry" required>
+                    </label>
+                    <label for="last_name">
+                        LAST NAME
+                        <input type="text" id="last_name" name="last_name" placeholder="hawk">
+                    </label>
+                </fieldset>
+                
+                    
+                <fieldset>
+                    <label for="email">
+                        *EMAIL
+                        <input type="email" id="email" name="email" placeholder="hmmmmm@gmail.com" required>
+                    </label>
+                    <label for="phoneNumber">
+                        *PHONE NUMBER
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}"  placeholder="9102121299">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">
+                        *PASSWORD
+                        <input type="password" name="password" title="Password must contain at least 8 characters" id="password" pattern=".{8,}" required>
+                    </label>
+                    <label for="comfirmPassword">
+                        *CONFIRM PASSWORD
+                        <input type="password" id="confirmPassword" title="Password must contain at least 8 characters" pattern=".{8,}" required oninput="checkConfirmPassword()">
+                    </label>
+                </fieldset>
+            </div>
+        </form>
+        <button type="submit" form="sign-up">Create Account</button>
+        <div class="log-in">
+            Already have an account? <a href="#">Log in</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
